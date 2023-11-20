@@ -5,7 +5,7 @@ dotenv.config();
 const token = process.env.DISCORD_BOT_TOKEN;
 
 client.on("messageCreate", (message) => {
-	message.reply("Hello Chutiye");
+	message.reply("Hello " + message.globalName);
 	console.log(message);
 })
 
